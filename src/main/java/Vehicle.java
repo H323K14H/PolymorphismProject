@@ -1,4 +1,4 @@
-public class Vehicle {
+public abstract class Vehicle {
     private String name;
     private double cost;
     private String transportationMode;
@@ -11,6 +11,19 @@ public class Vehicle {
         this.seatingCapacity = seatingCapacity;
     }
 
+    public String getName() {
+        return this.name;
+    }
 
+    public double getCost() {
+        return this.cost;
+    }
 
+    public String getTransportationMode() {
+        return this.transportationMode;
+    }
+
+    public int getSeatingCapacity() {
+        return this.seatingCapacity;
+    }
 }
